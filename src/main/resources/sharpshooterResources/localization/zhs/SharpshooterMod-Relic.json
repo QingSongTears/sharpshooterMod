@@ -1,0 +1,16 @@
+{
+  "sharpshooter:Pistol": {
+    "NAME": "破旧手枪",
+    "FLAVOR": "带有特殊子弹的手枪",
+    "DESCRIPTIONS": [
+      "每场战斗开始时，将一张 #y银弹 加入你手牌"
+    ]
+  },
+  "sharpshooter:RainBarrage": {
+    "NAME": "弹幕之雨",
+    "FLAVOR": "补充子弹",
+    "DESCRIPTIONS": [
+      "每回合开始， #y装填 #b10 颗 #y银弹"
+    ]
+  }
+}

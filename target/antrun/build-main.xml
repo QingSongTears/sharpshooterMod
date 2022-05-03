@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy file="target/SharpshooterMod.jar" tofile="D:\steam\steamapps/common/SlayTheSpire/mods/SharpshooterMod.jar"/>
+</target>
+</project>

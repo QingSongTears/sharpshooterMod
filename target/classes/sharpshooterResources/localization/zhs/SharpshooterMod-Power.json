@@ -1,0 +1,86 @@
+{
+  "sharpshooter:NormalMagazinePower":{
+    "NAME": "普通弹匣",
+    "DESCRIPTIONS": [
+      "上限 #b"," 颗 #y普通子弹 。每次 #y射击 消耗 #b"," 颗，造成 #b"," 点 #y子弹伤害。消耗完弹匣获得 #b1 张 #y弹药支援"
+    ]
+  },
+  "sharpshooter:SpecialMagazinePower":{
+    "NAME": "特效弹匣",
+    "DESCRIPTIONS": [
+      "上限 #b"," 颗 #y特效子弹 。每次 #y射击 随机消耗 #b"," 颗，造成 #b"," 点 #y子弹伤害。可以通过卡牌等其他途径补充子弹"
+    ]
+  },
+  "sharpshooter:GrenadeBoxPower":{
+    "NAME": "手雷箱",
+    "DESCRIPTIONS": [
+      "上限 #b"," 颗 #y手雷 。每次使用攻击牌时，随机消耗 #b"," 颗"
+    ]
+  },
+  "sharpshooter:DualFlickerPower":{
+    "NAME": "弹药主宰",
+    "DESCRIPTIONS": [
+      "#y射击 时有 #b"," 概率额外 #y射击 #b1 次"
+    ]
+  },
+  "sharpshooter:WeaknessPower":{
+    "NAME": "弱点",
+    "DESCRIPTIONS": [
+      "每次被 #y射击，消耗一层 #y弱点 ，造成 #b"," 点伤害",",获得 [E] "
+    ]
+  },
+  "sharpshooter:FreezePower":{
+    "NAME": "冰冻",
+    "DESCRIPTIONS": [
+      " #y冰冻 达到 #b10 层时，失去 #b10 层，使目标获得 #y眩晕 。回合结束层数减 #b2"
+    ]
+  },
+  "sharpshooter:FlashPower":{
+    "NAME": "感电",
+    "DESCRIPTIONS": [
+      "受到 #y射击 造成伤害时，额外受到 #b1 点伤害。回合结束层数减 #b1"
+    ]
+  },
+  "sharpshooter:OverheatingPower":{
+    "NAME": "超温",
+    "DESCRIPTIONS": [
+      "达到 #b5 层时，失去 #b5 层，获得 #y漏电，获得 #b1 张 #y重火器改造 .回合结束减少 #b2 层"
+    ]
+  },
+  "sharpshooter:LeakagePower":{
+    "NAME": "漏电",
+    "DESCRIPTIONS": [
+      "本回合 #y重火器 造成的伤害变为 #b50 %"
+    ]
+  },
+  "sharpshooter:OverChargePower":{
+    "NAME": "超负荷填装",
+    "DESCRIPTIONS": [
+      "本场战斗 #装填 牌都被 升级"
+    ]
+  },
+  "sharpshooter:DeathRevolverPower":{
+    "NAME": "死亡左轮",
+    "DESCRIPTIONS": [
+      "本场战斗 #y射击 牌都被 升级 ， #y弱点 伤害+ #b1"
+    ]
+  },
+  "sharpshooter:EagleEyePower":{
+    "NAME": "潜能爆发",
+    "DESCRIPTIONS": [
+      "本场战斗 #y重火器 牌都被 升级 ， #y漏电 效果 变为 #b25 %"
+    ]
+  },
+  "sharpshooter:MarksmanshipPower":{
+    "NAME": "射击掌握",
+    "DESCRIPTIONS": [
+      "每回合第一张使用的 #y射击 牌耗能减少 #b1"
+    ]
+  },
+  "sharpshooter:WastelandStormPower":{
+    "NAME": "风暴狙击",
+    "DESCRIPTIONS": [
+      "每次使用 #y射击 牌，对随机敌人造成 #b"," 点 #y子弹伤害"
+    ]
+  }
+}
