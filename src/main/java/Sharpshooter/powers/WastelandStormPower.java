@@ -4,13 +4,16 @@ import Sharpshooter.SharpshooterMod;
 import Sharpshooter.characters.sharpshooter;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class WastelandStormPower extends SharpshooterAbstractPower {
     public static final String POWER_ID = SharpshooterMod.makeID("WastelandStormPower");
@@ -37,8 +40,9 @@ public class WastelandStormPower extends SharpshooterAbstractPower {
         super.onUseCard(card, action);
         if (card.hasTag(sharpshooter.Enums.SHOOTING))
         {
-            ((NormalMagazinePower)this.owner.getPower(NormalMagazinePower.POWER_ID)).shoot(action.target,1);
-            addToBot(new DamageRandomEnemyAction(new DamageInfo(this.owner,this.amount,sharpshooter.Enums.NORMAL_BULLET_DMG), AbstractGameAction.AttackEffect.FIRE));
+            AbstractMonster monster = AbstractDungeon.getRandomMonster();
+            ((NormalMagazinePower)this.owner.getPower(NormalMagazinePower.POWER_ID)).shoot(monster,1);
+            addToBot(new DamageAction(monster,new DamageInfo(this.owner,this.amount,sharpshooter.Enums.NORMAL_BULLET_DMG),AbstractGameAction.AttackEffect.FIRE));
         }
     }
 }

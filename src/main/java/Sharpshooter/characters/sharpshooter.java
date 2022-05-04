@@ -8,7 +8,7 @@ import Sharpshooter.cards.awakens.BlackRoses;
 import Sharpshooter.cards.buffs.DeathRevolver;
 import Sharpshooter.cards.buffs.OverCharge;
 import Sharpshooter.cards.bullets.*;
-import Sharpshooter.cards.firearms.FirearmSupport;
+import Sharpshooter.cards.firearms.*;
 import Sharpshooter.cards.grenades.FlashGrenade;
 import Sharpshooter.cards.grenades.LockOnGrenade;
 import Sharpshooter.cards.shoots.*;
@@ -27,6 +27,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.blue.Strike_Blue;
+import com.megacrit.cardcrawl.cards.optionCards.BecomeAlmighty;
 import com.megacrit.cardcrawl.cards.purple.MasterReality;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -37,6 +38,7 @@ import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.powers.WeakPower;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import java.util.ArrayList;
@@ -89,8 +91,8 @@ public class sharpshooter extends CustomPlayer {
         public static DamageInfo.DamageType NORMAL_BULLET_DMG;
         @SpireEnum(name = "SHARP_SHOOTER_YELLOW")
         public static DamageInfo.DamageType SPECIAL_BULLET_DMG;
-        @SpireEnum(name = "SHARP_SHOOTER_YELLOW")
-        public static DamageInfo.DamageType FIREARM_BULLET_DMG;
+        // @SpireEnum(name = "SHARP_SHOOTER_YELLOW")
+        // public static DamageInfo.DamageType FIREARM_BULLET_DMG;
 
         @SpireEnum(name = "SHARP_SHOOTER_YELLOW")
         public static AbstractCard.CardTags BUFF;
@@ -122,29 +124,29 @@ public class sharpshooter extends CustomPlayer {
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
 
-//        retVal.add(BlackRoses.ID);
-//        retVal.add(OverCharge.ID);
-//        retVal.add(Sniping.ID);
-//        retVal.add(DeathRevolver.ID);
-//        retVal.add(PistolCarbine.ID);
-//        retVal.add(DeathHawk.ID);
-//        retVal.add(MultiHeadshot.ID);
-//        retVal.add(Marksmanship.ID);
-//        retVal.add(FastestGun.ID);
-//        retVal.add(LockOnGrenade.ID);
+        retVal.add(LaserRifle.ID);
+        retVal.add(QuantumBomb.ID);
+        retVal.add(DualTrigger.ID);
+        retVal.add(Extruder.ID);
+        retVal.add(DangerClose.ID);
+        retVal.add(CannonBall.ID);
+        retVal.add(OverBoostPack.ID);
+        retVal.add(GrenadeLauncher.ID);
+        retVal.add(FastestGun.ID);
+        retVal.add(LockOnGrenade.ID);
 
 
 
-        retVal.add(Strike_sharpshooter.ID);
-        retVal.add(Strike_sharpshooter.ID);
-        retVal.add(Strike_sharpshooter.ID);
-        retVal.add(Strike_sharpshooter.ID);
-        retVal.add(Defend_sharpshooter.ID);
-        retVal.add(Defend_sharpshooter.ID);
-        retVal.add(Defend_sharpshooter.ID);
-        retVal.add(Defend_sharpshooter.ID);
-        retVal.add(BBQ.ID);
-        retVal.add(RisingShot.ID);
+//        retVal.add(Strike_sharpshooter.ID);
+//        retVal.add(Strike_sharpshooter.ID);
+//        retVal.add(Strike_sharpshooter.ID);
+//        retVal.add(Strike_sharpshooter.ID);
+//        retVal.add(Defend_sharpshooter.ID);
+//        retVal.add(Defend_sharpshooter.ID);
+//        retVal.add(Defend_sharpshooter.ID);
+//        retVal.add(Defend_sharpshooter.ID);
+//        retVal.add(BBQ.ID);
+//        retVal.add(RisingShot.ID);
         return retVal;
     }
 
@@ -245,6 +247,8 @@ public class sharpshooter extends CustomPlayer {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this,this,new GrenadeBoxPower(this, 0), 1));
         WeaknessPower.isUpgrade = false;
         WeaknessPower.onceDamage = WeaknessPower.baseDamage;
+
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this,this,new WeakPower(this,10,false),10));
     }
 
     public static AbstractCard getTagsCard(AbstractCard.CardTags tags)

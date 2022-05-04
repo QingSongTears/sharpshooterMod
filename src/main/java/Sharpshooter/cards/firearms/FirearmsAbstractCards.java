@@ -15,11 +15,12 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public abstract class FirearmsAbstractCards extends SharpshooterAbstractCards {
     public static int RATE = 2;
-    public static int heat = 0;
+    public int heat = 0;
     public FirearmsAbstractCards(String id, String name, String img, int cost, String rawDescription, CardType type, CardColor color, CardRarity rarity, CardTarget target) {
         super(id, name, img, cost, rawDescription, type, color, rarity, target);
         if (this.type == CardType.ATTACK)
             this.tags.add(sharpshooter.Enums.FIREARMS);
+        this.heat = cost;
     }
 
 
@@ -45,12 +46,14 @@ public abstract class FirearmsAbstractCards extends SharpshooterAbstractCards {
 
     @Override
     public void calculateCardDamage(AbstractMonster mo) {
-        super.calculateCardDamage(mo);
-        if (AbstractDungeon.player.hasPower(LeakagePower.POWER_ID))
-        {
-            this.damage /= 2;
+        AbstractPower strength = AbstractDungeon.player.getPower(StrengthPower.POWER_ID);
+        if (strength != null) {
+            strength.amount *= RATE;
         }
-        this.isDamageModified = true;
+        super.calculateCardDamage(mo);
+        if (strength != null) {
+            strength.amount /= RATE;
+        }
     }
 
     @Override

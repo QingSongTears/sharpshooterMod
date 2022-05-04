@@ -54,6 +54,6 @@ public class QuantumBomb extends FirearmsAbstractCards {
                 }
             }
         }
-        addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, false), sharpshooter.Enums.FIREARM_BULLET_DMG, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL, true));
+        addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL, true));
     }
 }

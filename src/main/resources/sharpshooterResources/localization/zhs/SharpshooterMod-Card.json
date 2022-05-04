@@ -197,5 +197,37 @@
     "NAME": "极限多重射击",
     "DESCRIPTION": "对所有敌人 sharpshooter:射击 !M! 次 NL 给予 2 层 sharpshooter:弱点",
     "UPGRADE_DESCRIPTION": "对所有敌人 sharpshooter:射击 !M!次 NL 给予 3 层 sharpshooter:弱点"
+  },
+  "sharpshooter:DualTrigger": {
+    "NAME": "光热反应",
+    "DESCRIPTION": "将你 sharpshooter:超温 转化成同层数 力量 NL 消耗"
+  },
+  "sharpshooter:LaserRifle": {
+    "NAME": "激光炮",
+    "DESCRIPTION": "对所有敌人造成!D!点伤害，每打出一次，本场战斗此卡伤害+!M!。 斩杀 时，此卡伤害永久+1 NL sharpshooter:重火器 NL sharpshooter:超温 +2"
+  },
+  "sharpshooter:OverBoostPack": {
+    "NAME": "超动力补给包",
+    "DESCRIPTION": "本回本重火器耗能减少1"
+  },
+  "sharpshooter:GrenadeLauncher": {
+    "NAME": "FM-31榴弹发射器",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次 NL sharpshooter:重火器 NL sharpshooter:超温 +2"
+  },
+  "sharpshooter:CannonBall": {
+    "NAME": "加农炮",
+    "DESCRIPTION": "造成 !D! 点伤害 NL sharpshooter:重火器"
+  },
+  "sharpshooter:Extruder": {
+    "NAME": "X-1压缩量子炮",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 NL sharpshooter:重火器 NL sharpshooter:超温 +3"
+  },
+  "sharpshooter:DangerClose": {
+    "NAME": "重火力支援",
+    "DESCRIPTION": "每次使用 sharpshooter:重火器 牌时，对所有敌人造成 !M! 点伤害 NL sharpshooter:重火器 NL sharpshooter:超温 +1"
+  },
+  "sharpshooter:ConcentratedFire": {
+    "NAME": "集中火力",
+    "DESCRIPTION": "下 !M! 张 sharpshooter:重火器 牌将被 打出两次"
   }
 }

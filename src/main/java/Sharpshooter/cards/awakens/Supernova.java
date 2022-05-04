@@ -56,7 +56,7 @@ public class Supernova extends FirearmsAbstractCards {
     public void use(AbstractPlayer p, AbstractMonster m) {
         for(int i=0;i<this.magicNumber;i++)
         {
-            addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, false), sharpshooter.Enums.FIREARM_BULLET_DMG, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL, true));
+            addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, false), this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL, true));
         }
         if (this.upgraded)
         {

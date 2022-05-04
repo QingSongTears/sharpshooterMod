@@ -5,6 +5,7 @@ import Sharpshooter.cards.firearms.FirearmSupport;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -14,6 +15,7 @@ public class OverheatingPower extends SharpshooterAbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    public int reduceNum = 1;
     public OverheatingPower(AbstractCreature owner, int amount)
     {
         this.name = NAME;
@@ -26,7 +28,7 @@ public class OverheatingPower extends SharpshooterAbstractPower {
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        this.description = DESCRIPTIONS[0] + this.reduceNum + DESCRIPTIONS[1];
     }
 
     @Override
@@ -43,6 +45,15 @@ public class OverheatingPower extends SharpshooterAbstractPower {
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         super.atEndOfTurn(isPlayer);
-        this.reducePower(1);
+        this.reducePower(this.reduceNum);
+    }
+
+    public void reducePower(int amount)
+    {
+        super.reducePower(amount);
+        if(this.amount <= 0)
+        {
+            addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+        }
     }
 }
