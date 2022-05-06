@@ -16,6 +16,8 @@ public class OverheatingPower extends SharpshooterAbstractPower {
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     public int reduceNum = 1;
+    public static int LIMIT = 5;
+    public static int BASE_LIMIT = 5;
     public OverheatingPower(AbstractCreature owner, int amount)
     {
         this.name = NAME;
@@ -28,15 +30,15 @@ public class OverheatingPower extends SharpshooterAbstractPower {
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.reduceNum + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0] + this.LIMIT + DESCRIPTIONS[1] + this.LIMIT + DESCRIPTIONS[2] + this.reduceNum + DESCRIPTIONS[3];
     }
 
     @Override
     public void stackPower(int stackAmount) {
         super.stackPower(stackAmount);
-        if (this.amount >= 5)
+        if (this.amount >= this.LIMIT)
         {
-            this.reducePower(5);
+            this.reducePower(this.LIMIT);
             addToTop(new MakeTempCardInHandAction(new FirearmSupport()));
             addToTop(new ApplyPowerAction(this.owner,this.owner,new LeakagePower(this.owner,0),1));
         }

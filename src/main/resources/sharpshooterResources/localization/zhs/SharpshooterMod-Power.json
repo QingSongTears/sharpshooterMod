@@ -44,7 +44,7 @@
   "sharpshooter:OverheatingPower":{
     "NAME": "超温",
     "DESCRIPTIONS": [
-      "达到 #b5 层时，失去 #b5 层，获得 #y漏电，获得 #b1 张 #y重火器改造 .回合结束减少 #b"," 层"
+      "达到 #b"," 层时，失去 #b"," 层，获得 #y漏电，获得 #b1 张 #y重火器改造 .回合结束减少 #b"," 层"
     ]
   },
   "sharpshooter:LeakagePower":{
@@ -87,6 +87,24 @@
     "NAME": "重火力支援",
     "DESCRIPTIONS": [
       "每次使用 #y重火器 牌时，对所有敌人造成 #b"," 点伤害"
+    ]
+  },
+  "sharpshooter:ConcentratedFirePower":{
+    "NAME": "集中火力",
+    "DESCRIPTIONS": [
+      "下 #b"," 张 #y重火器 牌将被 打出两次"
+    ]
+  },
+  "sharpshooter:HeavyWeaponEnhancementPower":{
+    "NAME": "重火器改造",
+    "DESCRIPTIONS": [
+      "本回合不在获得 #y超温"
+    ]
+  },
+  "sharpshooter:HeavyFirearmTechniquePower":{
+    "NAME": "重火器奥义",
+    "DESCRIPTIONS": [
+      "回合 #y重火器 造成得伤害得 #b"," %转化为 #y格挡"
     ]
   }
 }

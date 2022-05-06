@@ -72,7 +72,7 @@
   {
     "PROPER_NAME": "感电",
     "NAMES": ["感电"],
-    "DESCRIPTION": "受到 #y射击 造成伤害时，额外受到 #b1 点伤害。回合结束层数减 #b1"
+    "DESCRIPTION": "受到 #y射击 造成伤害时，额外受到 #b1 点伤害，不受力量，虚弱影响。回合结束层数减 #b1"
   },
   {
     "PROPER_NAME": "感电手雷",
@@ -92,7 +92,7 @@
   {
     "PROPER_NAME": "超温",
     "NAMES": ["超温"],
-    "DESCRIPTION": "达到 #b5 层时，失去 #b5 层，获得 #y漏电，获得 #b1 张 #y重火器改造 .回合结束减少 #b2 层"
+    "DESCRIPTION": "达到一定层数，获得 #y漏电，获得 #b1 张 #y重火器改造。回合结束减少"
   },
   {
     "PROPER_NAME": "镭射手雷",
@@ -107,7 +107,7 @@
   {
     "PROPER_NAME": "增益",
     "NAMES": ["增益"],
-    "DESCRIPTION": "拥有特定 #y升级 效   果"
+    "DESCRIPTION": "拥有特定 #y升级 效果"
   },
   {
     "PROPER_NAME": "觉醒",

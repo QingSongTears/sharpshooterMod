@@ -6,16 +6,14 @@ import Sharpshooter.cards.Defend_sharpshooter;
 import Sharpshooter.cards.Strike_sharpshooter;
 import Sharpshooter.cards.awakens.BlackRoses;
 import Sharpshooter.cards.buffs.DeathRevolver;
+import Sharpshooter.cards.buffs.EagleEye;
 import Sharpshooter.cards.buffs.OverCharge;
 import Sharpshooter.cards.bullets.*;
 import Sharpshooter.cards.firearms.*;
 import Sharpshooter.cards.grenades.FlashGrenade;
 import Sharpshooter.cards.grenades.LockOnGrenade;
 import Sharpshooter.cards.shoots.*;
-import Sharpshooter.powers.GrenadeBoxPower;
-import Sharpshooter.powers.NormalMagazinePower;
-import Sharpshooter.powers.SpecialMagazinePower;
-import Sharpshooter.powers.WeaknessPower;
+import Sharpshooter.powers.*;
 import Sharpshooter.relics.Pistol;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.AbstractAnimation;
@@ -124,16 +122,16 @@ public class sharpshooter extends CustomPlayer {
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
 
-        retVal.add(LaserRifle.ID);
+        retVal.add(EnhancedStrength.ID);
         retVal.add(QuantumBomb.ID);
-        retVal.add(DualTrigger.ID);
+        retVal.add(EagleEye.ID);
         retVal.add(Extruder.ID);
         retVal.add(DangerClose.ID);
         retVal.add(CannonBall.ID);
         retVal.add(OverBoostPack.ID);
         retVal.add(GrenadeLauncher.ID);
-        retVal.add(FastestGun.ID);
-        retVal.add(LockOnGrenade.ID);
+        retVal.add(HeavyFirearmTechnique.ID);
+        retVal.add(HeavyWeaponEnhancement.ID);
 
 
 
@@ -247,6 +245,7 @@ public class sharpshooter extends CustomPlayer {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this,this,new GrenadeBoxPower(this, 0), 1));
         WeaknessPower.isUpgrade = false;
         WeaknessPower.onceDamage = WeaknessPower.baseDamage;
+        OverheatingPower.LIMIT = OverheatingPower.BASE_LIMIT;
 
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this,this,new WeakPower(this,10,false),10));
     }

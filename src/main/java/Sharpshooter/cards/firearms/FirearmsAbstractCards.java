@@ -3,6 +3,7 @@ package Sharpshooter.cards.firearms;
 import Sharpshooter.cards.SharpshooterAbstractCards;
 import Sharpshooter.characters.sharpshooter;
 import Sharpshooter.powers.EagleEyePower;
+import Sharpshooter.powers.HeavyWeaponEnhancementPower;
 import Sharpshooter.powers.LeakagePower;
 import Sharpshooter.powers.OverheatingPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -20,7 +21,6 @@ public abstract class FirearmsAbstractCards extends SharpshooterAbstractCards {
         super(id, name, img, cost, rawDescription, type, color, rarity, target);
         if (this.type == CardType.ATTACK)
             this.tags.add(sharpshooter.Enums.FIREARMS);
-        this.heat = cost;
     }
 
 
@@ -59,7 +59,7 @@ public abstract class FirearmsAbstractCards extends SharpshooterAbstractCards {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         onUse(p,m);
-        if(this.heat > 0)
+        if(this.heat > 0 && !p.hasPower(HeavyWeaponEnhancementPower.POWER_ID))
             addToTop(new ApplyPowerAction(p,p,new OverheatingPower(p,this.heat),this.heat));
     }
 

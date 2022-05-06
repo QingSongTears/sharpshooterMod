@@ -36,6 +36,7 @@ public class DangerClosePower extends SharpshooterAbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
+        updateDescription();
         if (card.hasTag(sharpshooter.Enums.FIREARMS))
         {
             int damage = this.amount;
