@@ -24,14 +24,14 @@ public class HeavyFirearmTechnique extends FirearmsAbstractCards {
 
     public HeavyFirearmTechnique() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = this.magicNumber = 30;
+        this.baseMagicNumber = this.magicNumber = 6;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(20);
+            upgradeMagicNumber(4);
         }
     }
 

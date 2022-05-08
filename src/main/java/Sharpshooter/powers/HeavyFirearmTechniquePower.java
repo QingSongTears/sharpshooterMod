@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -18,7 +17,6 @@ public class HeavyFirearmTechniquePower extends SharpshooterAbstractPower {
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private boolean isFirearms = false;
     public HeavyFirearmTechniquePower(AbstractCreature owner, int amount)
     {
         this.name = NAME;
@@ -31,7 +29,6 @@ public class HeavyFirearmTechniquePower extends SharpshooterAbstractPower {
     }
 
     public void updateDescription() {
-        this.amount = this.amount > 100 ? 100: this.amount;
         this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
@@ -44,29 +41,14 @@ public class HeavyFirearmTechniquePower extends SharpshooterAbstractPower {
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
         super.onUseCard(card, action);
-        this.isFirearms = false;
         if (card.hasTag(sharpshooter.Enums.FIREARMS))
         {
             if (card.type == AbstractCard.CardType.ATTACK)
             {
-                this.isFirearms = true;
-//                if (card.target == AbstractCard.CardTarget.ENEMY)
-//                {
-//                    addToBot(new GainBlockAction(this.owner,card.damage * this.amount / 100));
-//                }
-//                else if (card.target == AbstractCard.CardTarget.ALL_ENEMY)
-//                {
-//                }
+                addToBot(new GainBlockAction(this.owner,this.amount));
             }
         }
     }
 
-    @Override
-    public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        super.onAttack(info, damageAmount, target);
-        if (this.isFirearms)
-        {
-            addToBot(new GainBlockAction(this.owner,damageAmount * this.amount / 100));
-        }
-    }
+
 }

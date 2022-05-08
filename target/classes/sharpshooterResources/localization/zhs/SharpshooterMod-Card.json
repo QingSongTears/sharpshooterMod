@@ -240,7 +240,7 @@
   },
   "sharpshooter:HeavyFirearmTechnique": {
     "NAME": "重火器奥义",
-    "DESCRIPTION": "本回合 sharpshooter:重火器 造成得伤害得!M! %转化为 格挡 NL 被 格挡 不计入"
+    "DESCRIPTION": "本回合使用 sharpshooter:重火器 牌，获得 !M! 格挡 NL "
   },
   "sharpshooter:HeavyFirearmMastery": {
     "NAME": "重火器精通",

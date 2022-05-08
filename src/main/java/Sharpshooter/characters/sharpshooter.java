@@ -123,29 +123,29 @@ public class sharpshooter extends CustomPlayer {
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
 
-        retVal.add(EnhancedStrength.ID);
-        retVal.add(HeavyFirearmMastery.ID);
-        retVal.add(EagleEye.ID);
-        retVal.add(Extruder.ID);
-        retVal.add(DangerClose.ID);
-        retVal.add(FlamePillar.ID);
-        retVal.add(OverBoostPack.ID);
-        retVal.add(GrenadeLauncher.ID);
-        retVal.add(HeavyFirearmTechnique.ID);
-        retVal.add(HeavyWeaponEnhancement.ID);
-        retVal.add(SatelliteBeam.ID);
-        retVal.add(InterlockSatellite.ID);
+//        retVal.add(EnhancedStrength.ID);
+//        retVal.add(HeavyFirearmMastery.ID);
+//        retVal.add(EagleEye.ID);
+//        retVal.add(Extruder.ID);
+//        retVal.add(DangerClose.ID);
+//        retVal.add(FlamePillar.ID);
+//        retVal.add(OverBoostPack.ID);
+//        retVal.add(GrenadeLauncher.ID);
+//        retVal.add(HeavyFirearmTechnique.ID);
+//        retVal.add(HeavyWeaponEnhancement.ID);
+//        retVal.add(SatelliteBeam.ID);
+//        retVal.add(InterlockSatellite.ID);
 
-//        retVal.add(Strike_sharpshooter.ID);
-//        retVal.add(Strike_sharpshooter.ID);
-//        retVal.add(Strike_sharpshooter.ID);
-//        retVal.add(Strike_sharpshooter.ID);
-//        retVal.add(Defend_sharpshooter.ID);
-//        retVal.add(Defend_sharpshooter.ID);
-//        retVal.add(Defend_sharpshooter.ID);
-//        retVal.add(Defend_sharpshooter.ID);
-//        retVal.add(BBQ.ID);
-//        retVal.add(RisingShot.ID);
+        retVal.add(Strike_sharpshooter.ID);
+        retVal.add(Strike_sharpshooter.ID);
+        retVal.add(Strike_sharpshooter.ID);
+        retVal.add(Strike_sharpshooter.ID);
+        retVal.add(Defend_sharpshooter.ID);
+        retVal.add(Defend_sharpshooter.ID);
+        retVal.add(Defend_sharpshooter.ID);
+        retVal.add(Defend_sharpshooter.ID);
+        retVal.add(BBQ.ID);
+        retVal.add(RisingShot.ID);
         return retVal;
     }
 
