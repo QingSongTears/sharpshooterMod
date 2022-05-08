@@ -5,6 +5,7 @@ import Sharpshooter.SharpshooterMod;
 import Sharpshooter.cards.Defend_sharpshooter;
 import Sharpshooter.cards.Strike_sharpshooter;
 import Sharpshooter.cards.awakens.BlackRoses;
+import Sharpshooter.cards.awakens.SatelliteBeam;
 import Sharpshooter.cards.buffs.DeathRevolver;
 import Sharpshooter.cards.buffs.EagleEye;
 import Sharpshooter.cards.buffs.OverCharge;
@@ -132,7 +133,7 @@ public class sharpshooter extends CustomPlayer {
         retVal.add(GrenadeLauncher.ID);
         retVal.add(HeavyFirearmTechnique.ID);
         retVal.add(HeavyWeaponEnhancement.ID);
-
+        retVal.add(SatelliteBeam.ID);
 
 
 //        retVal.add(Strike_sharpshooter.ID);

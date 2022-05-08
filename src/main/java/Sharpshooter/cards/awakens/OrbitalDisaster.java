@@ -43,8 +43,6 @@ public class OrbitalDisaster extends FirearmsAbstractCards {
         {
             upgradeName();
             upgradeDamage(2);
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
         }
     }
 
