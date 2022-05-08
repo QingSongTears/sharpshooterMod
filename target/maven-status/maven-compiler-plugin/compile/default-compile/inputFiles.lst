@@ -11,6 +11,7 @@ D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\FlamePillar.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\bullets\Loaded.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\EnhancedStrength.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\ConcentratedFire.java
+D:\sharpshooterMod\src\main\java\Sharpshooter\powers\SpectralSearchEyePower.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\HeavyFirearmTechnique.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\SharpshooterAbstractCards.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\awakens\SeventhFlow.java
@@ -24,6 +25,7 @@ D:\sharpshooterMod\src\main\java\Sharpshooter\cards\buffs\DeathRevolver.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\powers\DualFlickerPower.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\shoots\DeathHawk.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\grenades\GrenadeAbstractCards.java
+D:\sharpshooterMod\src\main\java\Sharpshooter\cards\awakens\BusterBeam.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\grenades\FreezeGrenade.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\bullets\BurstBullet.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\FirearmSupport.java
@@ -45,6 +47,7 @@ D:\sharpshooterMod\src\main\java\Sharpshooter\powers\SpecialMagazinePower.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\powers\FreezePower.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\shoots\SuddenDeath.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\powers\FlashPower.java
+D:\sharpshooterMod\src\main\java\Sharpshooter\powers\SatelliteBeamPower.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\awakens\BlackRoses.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\GrenadeLauncher.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\bullets\BoosterBullet.java
@@ -56,13 +59,17 @@ D:\sharpshooterMod\src\main\java\Sharpshooter\cards\shoots\MovingShot.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\powers\WastelandStormPower.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\grenades\LockOnGrenade.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\shoots\BusterShot.java
+D:\sharpshooterMod\src\main\java\Sharpshooter\cards\awakens\OrbitalDisaster.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\powers\WeaknessPower.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\Defend_sharpshooter.java
+D:\sharpshooterMod\src\main\java\Sharpshooter\cards\awakens\SatelliteBeam.java
+D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\InterlockSatellite.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\powers\HeavyFirearmTechniquePower.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\shoots\SuppressiveBarrage.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\bullets\DualFlicker.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\awakens\WastelandStorm.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\buffs\BuffAbstractCards.java
+D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\SteyrAMR.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\HeavyWeaponEnhancement.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\powers\EagleEyePower.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\shoots\Sensibility.java
@@ -70,6 +77,7 @@ D:\sharpshooterMod\src\main\java\Sharpshooter\cards\shoots\WipeOut.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\powers\OverheatingPower.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\bullets\FlameBullet.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\grenades\NormalGrenade.java
+D:\sharpshooterMod\src\main\java\Sharpshooter\powers\InterlockSatellitePower.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\utils\IDCheckDontTouchPls.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\DualTrigger.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\shoots\BBQ.java
