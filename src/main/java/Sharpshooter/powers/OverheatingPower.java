@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class OverheatingPower extends SharpshooterAbstractPower {
     public static final String POWER_ID = SharpshooterMod.makeID("OverheatingPower");
@@ -57,5 +58,11 @@ public class OverheatingPower extends SharpshooterAbstractPower {
         {
             addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
         }
+    }
+
+    @Override
+    public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
+        super.onApplyPower(power, target, source);
+        updateDescription();
     }
 }

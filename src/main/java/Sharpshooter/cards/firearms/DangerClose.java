@@ -26,8 +26,8 @@ public class DangerClose extends FirearmsAbstractCards {
     public DangerClose() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = this.magicNumber = 2;
-        this.heat = 1;
         this.tags.add(sharpshooter.Enums.FIREARMS);
+        this.heat = 1;
     }
 
     @Override

@@ -3,8 +3,10 @@ package Sharpshooter.cards.firearms;
 import Sharpshooter.SharpshooterMod;
 import Sharpshooter.characters.sharpshooter;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -42,7 +44,7 @@ public class GrenadeLauncher extends FirearmsAbstractCards {
     public void onUse(AbstractPlayer p, AbstractMonster m) {
         for(int i = 0;i<this.magicNumber;i++)
         {
-            addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_HEAVY, false));
+            addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn)));
         }
     }
 }

@@ -7,6 +7,7 @@ D:\sharpshooterMod\src\main\java\Sharpshooter\powers\StylishPower.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\shoots\RisingShot.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\DangerClose.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\characters\sharpshooter.java
+D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\FlamePillar.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\bullets\Loaded.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\EnhancedStrength.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\ConcentratedFire.java
@@ -49,6 +50,7 @@ D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\GrenadeLauncher.jav
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\bullets\BoosterBullet.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\bullets\BulletAbstractCards.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\LaserRifle.java
+D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\PlasmaBooster.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\shoots\Sniping.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\shoots\MovingShot.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\powers\WastelandStormPower.java
@@ -73,6 +75,7 @@ D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\DualTrigger.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\shoots\BBQ.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\awakens\DeathCrisis.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\utils\TextureLoader.java
+D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\ArcticBooster.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\buffs\EagleEye.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\shoots\WildShot.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\powers\HeavyWeaponEnhancementPower.java
@@ -94,4 +97,5 @@ D:\sharpshooterMod\src\main\java\Sharpshooter\utils\KeywordWithProper.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\Extruder.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\Strike_sharpshooter.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\cards\awakens\Supernova.java
+D:\sharpshooterMod\src\main\java\Sharpshooter\cards\firearms\HeavyFirearmMastery.java
 D:\sharpshooterMod\src\main\java\Sharpshooter\relics\RainBarrage.java

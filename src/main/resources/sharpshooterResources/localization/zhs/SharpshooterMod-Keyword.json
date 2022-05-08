@@ -128,5 +128,15 @@
     "PROPER_NAME": "子弹伤害",
     "NAMES": ["子弹伤害"],
     "DESCRIPTION": "基础伤害 #b1 ,不受 #y力量 和 #y虚弱 影响"
+  },
+  {
+    "PROPER_NAME": "卫星定位",
+    "NAMES": ["卫星定位"],
+    "DESCRIPTION": "每层受到 #y重火器 伤害增加 #b10 %"
+  },
+  {
+    "PROPER_NAME": "卫星射线",
+    "NAMES": ["卫星射线"],
+    "DESCRIPTION": "每回合开始对所有敌人造成伤害"
   }
 ]

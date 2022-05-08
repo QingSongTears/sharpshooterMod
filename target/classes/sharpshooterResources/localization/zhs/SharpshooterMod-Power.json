@@ -106,5 +106,17 @@
     "DESCRIPTIONS": [
       "回合 #y重火器 造成得伤害得 #b"," %转化为 #y格挡"
     ]
+  },
+  "sharpshooter:SatelliteBeamPower":{
+    "NAME": "卫星射线",
+    "DESCRIPTIONS": [
+      "回合开始对所有敌人造成 #b"," 点伤害，并给予 #b"," 层 #y卫星定位"
+    ]
+  },
+  "sharpshooter:SpectralSearchEyePower":{
+    "NAME": "卫星定位",
+    "DESCRIPTIONS": [
+      "受到 #y重火器 伤害增加 #b"," %，回合减少 #y1 层"
+    ]
   }
 }

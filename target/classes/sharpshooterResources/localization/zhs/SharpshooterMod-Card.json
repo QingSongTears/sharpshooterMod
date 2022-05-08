@@ -224,7 +224,7 @@
   },
   "sharpshooter:DangerClose": {
     "NAME": "重火力支援",
-    "DESCRIPTION": "每次使用 sharpshooter:重火器 牌时，对所有敌人造成 !M! 点伤害 NL sharpshooter:重火器 NL sharpshooter:超温 +1"
+    "DESCRIPTION": "每次使用 sharpshooter:重火器 攻击                 牌时，对所有敌人造成 !M! 点伤害 NL sharpshooter:重火器 NL sharpshooter:超温 +1"
   },
   "sharpshooter:ConcentratedFire": {
     "NAME": "集中火力",
@@ -244,6 +244,32 @@
   },
   "sharpshooter:HeavyFirearmMastery": {
     "NAME": "重火器精通",
-    "DESCRIPTION": "超温触发层数+1，获得!B! 格挡"
+    "DESCRIPTION": "超温触发层数+1，获得!B! 格挡 NL 消耗"
+  },
+  "sharpshooter:FlamePillar": {
+    "NAME": "聚焦喷火器",
+    "DESCRIPTION": "对所有敌人造成!D!点 NL 伤害!M!次 NL 获得一层 虚弱 NL sharpshooter:重火器 NL sharpshooter:超温 +2"
+  },
+  "sharpshooter:ArcticBooster": {
+    "NAME": "寒冰喷射器",
+    "DESCRIPTION": "对所有敌人造成!D!点 NL 伤害!M!次 NL 获得2层 sharpshooter:冰冻 NL sharpshooter:重火器 NL sharpshooter:超温 +2"
+  },
+  "sharpshooter:PlasmaBooster": {
+    "NAME": "等离子放射器",
+    "DESCRIPTION": "对所有敌人造成!D!点 NL 伤害!M!次 NL 获得一层 sharpshooter:感电 NL sharpshooter:重火器 NL sharpshooter:超温 +2"
+  },
+  "sharpshooter:SatelliteBeam": {
+    "NAME": "卫星射线",
+    "DESCRIPTION": "每回合开始对所有敌人造成 !D! 点伤害，给予一层 sharpshooter:卫星定位 NL sharpshooter:重火器 , sharpshooter:超温 +1 NL sharpshooter:觉醒 , 消耗",
+    "UPGRADE_DESCRIPTION": "每回合开始对所有敌人造成 !D! 点伤害，给予一层 sharpshooter:卫星定位 NL 获得一张 *毁灭射线 NL sharpshooter:重火器 , sharpshooter:超温 +1 NL sharpshooter:觉醒 , 消耗"
+  },
+  "sharpshooter:BusterBeam": {
+    "NAME": "毁灭射线",
+    "DESCRIPTION": "sharpshooter:卫星射线 伤害+3 NL 所有敌人受到!M!次 sharpshooter:卫星射线 NL sharpshooter:重火器 , sharpshooter:超温 +3 NL sharpshooter:觉醒 , 消耗",
+    "UPGRADE_DESCRIPTION": "sharpshooter:卫星射线 伤害+3 NL 所有敌人受到!M!次 sharpshooter:卫星射线 NL 获得一张 *裂核轨道炮 NL sharpshooter:重火器 , sharpshooter:超温 +3 NL sharpshooter:觉醒 , 消耗"
+  },
+  "sharpshooter:OrbitalDisaster": {
+    "NAME": "裂核轨道炮",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 !M! 次 加上目标 sharpshooter:卫星定位 层数 次数 NL sharpshooter:重火器 , sharpshooter:超温 +5 NL sharpshooter:觉醒 , 消耗"
   }
 }

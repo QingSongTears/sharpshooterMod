@@ -37,6 +37,6 @@ public class FirearmSupport extends FirearmsAbstractCards {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new MakeTempCardInHandAction(sharpshooter.getTagsCard(sharpshooter.Enums.FIREARMS)));
+        addToBot(new MakeTempCardInHandAction(sharpshooter.getTagsCard(sharpshooter.Enums.FIREARMS,CardRarity.RARE)));
     }
 }

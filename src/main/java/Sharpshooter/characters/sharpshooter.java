@@ -123,11 +123,11 @@ public class sharpshooter extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         retVal.add(EnhancedStrength.ID);
-        retVal.add(QuantumBomb.ID);
+        retVal.add(HeavyFirearmMastery.ID);
         retVal.add(EagleEye.ID);
         retVal.add(Extruder.ID);
         retVal.add(DangerClose.ID);
-        retVal.add(CannonBall.ID);
+        retVal.add(FlamePillar.ID);
         retVal.add(OverBoostPack.ID);
         retVal.add(GrenadeLauncher.ID);
         retVal.add(HeavyFirearmTechnique.ID);
@@ -250,7 +250,7 @@ public class sharpshooter extends CustomPlayer {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this,this,new WeakPower(this,10,false),10));
     }
 
-    public static AbstractCard getTagsCard(AbstractCard.CardTags tags)
+    public static AbstractCard getTagsCard(AbstractCard.CardTags tags, AbstractCard.CardRarity rarity)
     {
         ArrayList<AbstractCard> list = new ArrayList();
         Iterator var2 = AbstractDungeon.srcCommonCardPool.group.iterator();
@@ -258,7 +258,7 @@ public class sharpshooter extends CustomPlayer {
         AbstractCard c;
         while(var2.hasNext()) {
             c = (AbstractCard)var2.next();
-            if (c.hasTag(tags)) {
+            if (c.hasTag(tags) && c.rarity != rarity) {
                 list.add(c);
             }
         }
@@ -267,7 +267,7 @@ public class sharpshooter extends CustomPlayer {
 
         while(var2.hasNext()) {
             c = (AbstractCard)var2.next();
-            if (c.hasTag(tags)) {
+            if (c.hasTag(tags) && c.rarity != rarity) {
                 list.add(c);
             }
         }
@@ -276,7 +276,7 @@ public class sharpshooter extends CustomPlayer {
 
         while(var2.hasNext()) {
             c = (AbstractCard)var2.next();
-            if (c.hasTag(tags)) {
+            if (c.hasTag(tags) && c.rarity != rarity) {
                 list.add(c);
             }
         }
