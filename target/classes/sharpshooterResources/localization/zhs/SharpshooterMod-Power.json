@@ -118,5 +118,11 @@
     "DESCRIPTIONS": [
       "受到 #y重火器 伤害增加 #b"," %，回合减少 #y1 层"
     ]
+  },
+  "sharpshooter:InterlockSatellitePower":{
+    "NAME": "连锁卫星",
+    "DESCRIPTIONS": [
+      "每回合开始给予随机敌人 #b"," 层 #y卫星定位"
+    ]
   }
 }

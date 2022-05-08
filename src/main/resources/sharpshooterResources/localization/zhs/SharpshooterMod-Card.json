@@ -224,7 +224,7 @@
   },
   "sharpshooter:DangerClose": {
     "NAME": "重火力支援",
-    "DESCRIPTION": "每次使用 sharpshooter:重火器 攻击                 牌时，对所有敌人造成 !M! 点伤害 NL sharpshooter:重火器 NL sharpshooter:超温 +1"
+    "DESCRIPTION": "每次使用 sharpshooter:重火器 牌时，对所有敌人造成 !M! 点伤害 NL sharpshooter:重火器 NL sharpshooter:超温 +1"
   },
   "sharpshooter:ConcentratedFire": {
     "NAME": "集中火力",
@@ -271,5 +271,13 @@
   "sharpshooter:OrbitalDisaster": {
     "NAME": "裂核轨道炮",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害 !M! 次 加上目标 sharpshooter:卫星定位 层数 次数 NL sharpshooter:重火器 , sharpshooter:超温 +5 NL sharpshooter:觉醒 , 消耗"
+  },
+  "sharpshooter:SteyrAMR": {
+    "NAME": "反坦克炮",
+    "DESCRIPTION": "对敌人造成 !D!点伤害 !M! 次 NL sharpshooter:重火器 NL sharpshooter:超温 +1"
+  },
+  "sharpshooter:InterlockSatellite": {
+    "NAME": "连锁卫星",
+    "DESCRIPTION": "每回合开始给予随机敌人 !M! 层 sharpshooter:卫星定位"
   }
 }

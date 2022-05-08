@@ -134,7 +134,7 @@ public class sharpshooter extends CustomPlayer {
         retVal.add(HeavyFirearmTechnique.ID);
         retVal.add(HeavyWeaponEnhancement.ID);
         retVal.add(SatelliteBeam.ID);
-
+        retVal.add(InterlockSatellite.ID);
 
 //        retVal.add(Strike_sharpshooter.ID);
 //        retVal.add(Strike_sharpshooter.ID);
@@ -248,7 +248,7 @@ public class sharpshooter extends CustomPlayer {
         WeaknessPower.onceDamage = WeaknessPower.baseDamage;
         OverheatingPower.LIMIT = OverheatingPower.BASE_LIMIT;
 
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this,this,new WeakPower(this,10,false),10));
+        //AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this,this,new WeakPower(this,10,false),10));
     }
 
     public static AbstractCard getTagsCard(AbstractCard.CardTags tags, AbstractCard.CardRarity rarity)

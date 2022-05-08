@@ -29,6 +29,7 @@ public class SatelliteBeam extends FirearmsAbstractCards {
         this.damage = this.baseDamage = 3;
         this.heat = 1;
         this.tags.add(sharpshooter.Enums.AWAKEN);
+        this.tags.add(sharpshooter.Enums.FIREARMS);
         this.exhaust = true;
     }
 

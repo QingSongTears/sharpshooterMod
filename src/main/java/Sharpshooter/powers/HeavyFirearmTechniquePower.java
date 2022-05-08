@@ -44,6 +44,7 @@ public class HeavyFirearmTechniquePower extends SharpshooterAbstractPower {
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
         super.onUseCard(card, action);
+        this.isFirearms = false;
         if (card.hasTag(sharpshooter.Enums.FIREARMS))
         {
             if (card.type == AbstractCard.CardType.ATTACK)
@@ -67,6 +68,5 @@ public class HeavyFirearmTechniquePower extends SharpshooterAbstractPower {
         {
             addToBot(new GainBlockAction(this.owner,damageAmount * this.amount / 100));
         }
-        this.isFirearms = false;
     }
 }
