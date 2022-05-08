@@ -220,7 +220,7 @@
   },
   "sharpshooter:Extruder": {
     "NAME": "X-1压缩量子炮",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 NL sharpshooter:重火器 NL sharpshooter:超温 +3"
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 !M! 次 NL sharpshooter:重火器 NL sharpshooter:超温 +3"
   },
   "sharpshooter:DangerClose": {
     "NAME": "重火力支援",
@@ -240,7 +240,7 @@
   },
   "sharpshooter:HeavyFirearmTechnique": {
     "NAME": "重火器奥义",
-    "DESCRIPTION": "本回合使用 sharpshooter:重火器 牌，获得 !M! 格挡 NL "
+    "DESCRIPTION": "本回合每使用 sharpshooter:重火器 牌，获得 !M! 格挡 NL "
   },
   "sharpshooter:HeavyFirearmMastery": {
     "NAME": "重火器精通",

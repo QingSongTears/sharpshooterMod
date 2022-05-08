@@ -3,7 +3,6 @@ package Sharpshooter.cards.firearms;
 import Sharpshooter.SharpshooterMod;
 import Sharpshooter.characters.sharpshooter;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -26,7 +25,8 @@ public class Extruder extends FirearmsAbstractCards {
 
     public Extruder() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 25;
+        this.damage = this.baseDamage = 12;
+        this.magicNumber = this.baseMagicNumber = 2;
         this.heat = 3;
     }
 
@@ -34,12 +34,15 @@ public class Extruder extends FirearmsAbstractCards {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(5);
+            upgradeDamage(3);
         }
     }
 
     @Override
     public void onUse(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL, true));
+        for(int i=0;i<this.magicNumber;i++)
+        {
+            addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL, true));
+        }
     }
 }
